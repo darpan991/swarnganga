@@ -63,21 +63,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const slides = document.querySelectorAll('.hero-slide');
 const heroTitle = document.getElementById('heroTitle');
 const heroPrice = document.getElementById('heroPrice');
+const heroTagline = document.getElementById('heroTagline');
+const heroHeading = document.getElementById('heroHeading');
+const heroDescription = document.getElementById('heroDescription');
 let currentSlide = 0;
 
 function changeSlide() {
    slides[currentSlide].classList.remove('active');
    currentSlide = (currentSlide + 1) % slides.length;
 
-   // Fade out text
+   // Fade out image-overlay text
    heroTitle.style.opacity = '0';
    heroPrice.style.opacity = '0';
 
+   // Fade out left-side hero content
+   if (heroTagline) heroTagline.style.opacity = '0';
+   if (heroHeading) heroHeading.style.opacity = '0';
+   if (heroDescription) heroDescription.style.opacity = '0';
+
    setTimeout(() => {
-      heroTitle.textContent = slides[currentSlide].dataset.title;
-      heroPrice.textContent = slides[currentSlide].dataset.price;
+      const slide = slides[currentSlide];
+
+      heroTitle.textContent = slide.dataset.title;
+      heroPrice.textContent = slide.dataset.price;
       heroTitle.style.opacity = '1';
       heroPrice.style.opacity = '1';
+
+      if (heroTagline && slide.dataset.tagline) {
+         heroTagline.textContent = slide.dataset.tagline;
+         heroTagline.style.opacity = '1';
+      }
+      if (heroHeading && slide.dataset.heading) {
+         heroHeading.innerHTML = slide.dataset.heading;
+         heroHeading.style.opacity = '1';
+      }
+      if (heroDescription && slide.dataset.desc) {
+         heroDescription.textContent = slide.dataset.desc;
+         heroDescription.style.opacity = '1';
+      }
    }, 500);
 
    slides[currentSlide].classList.add('active');
