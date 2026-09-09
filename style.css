@@ -422,7 +422,7 @@ a {
 
 .offer-start-date {
 	font-family: var(--font-body);
-	font-size: 0.9rem;
+	font-size: 1.5rem;
 	font-weight: 600;
 	color: var(--color-charcoal);
 	background: linear-gradient(135deg, rgba(212, 168, 83, 0.28), rgba(212, 168, 83, 0.08));
@@ -1737,7 +1737,7 @@ a {
     grid-template-columns: 1fr;
     max-width: 420px;
   }
-  .sg-popup-image img{ min-height: 180px; }
+  .sg-popup-image{ display: none; }
   .sg-popup-content{ padding: var(--space-lg) var(--space-md); }
 }
 
