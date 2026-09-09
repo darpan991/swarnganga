@@ -29,7 +29,7 @@
                     <a href="#story">Our Story</a>
                     <a href="#craftsmanship">Why Swarnganga</a>
                     <a href="#contact">Visit Us</a>
-                    <a href="#contact" class="nav-cta">Festive Offer</a>
+                    <a href="#contact" class="nav-cta">Festive Offer <span class="nav-cta-date">15 Sept</span></a>
                 </nav>
                 
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
@@ -52,18 +52,19 @@
             <li><a href="#contact">Visit Us</a></li>
         </ul>
         <div class="mobile-nav-cta">
-            <a href="#contact" class="btn-primary">Festive Offer: 4.99% Making Charges</a>
+            <a href="#contact" class="btn-primary">Festive Offer: 4.99% Making Charges <span class="offer-date-tag">Starts 15th Sept</span></a>
         </div>
     </nav>
     
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content" style="padding-top: 110px;">
-            <p class="text-label hero-tagline">Established Over 50 Years Ago</p>
-            <h1 class="heading-display hero-title">
-                Five Decades of Trust,<br>A Legacy of <em>Gold</em>
+            <p class="text-label hero-tagline" id="heroTagline">Established Over 50 Years Ago</p>
+            <h1 class="heading-display hero-title" id="heroHeading">
+                Five Decades of Trust,<br>A Legacy of <em>Gold</em> — <span class="heading-offer">4.99% Making Charges</span>
             </h1>
-            <p class="text-body hero-description">
+            <p class="offer-start-date" id="heroOfferDate">Festive Offer Starts <strong>15th September</strong></p>
+            <p class="text-body hero-description" id="heroDescription">
                 Meerut's most cherished jewellery house welcomes you to celebrate 
                 this festive season with a heritage of purity, craftsmanship 
                 and trust — now with only 4.99% making charges.
@@ -74,21 +75,37 @@
             </div>
         </div>
         <div class="hero-image">
-            <div class="hero-slide active" data-title="Bridal Collection" data-price="Only 4.99% Making Charges">
+            <div class="hero-slide active"
+                 data-title="Bridal Collection"
+                 data-price="Only 4.99% Making Charges"
+                 data-tagline="Established Over 50 Years Ago"
+                 data-heading="Five Decades of Trust,<br>A Legacy of <em>Gold</em> — <span class=&quot;heading-offer&quot;>4.99% Making Charges</span>"
+                 data-desc="Meerut's most cherished jewellery house welcomes you to celebrate this festive season with a heritage of purity, craftsmanship and trust — now with only 4.99% making charges.">
                 <img src="images/p1.jpeg" 
                      alt="Bridal gold jewellery collection">
             </div>
-            <div class="hero-slide" data-title="Pure Gold Chains &amp; Necklaces" data-price="100% BIS Hallmarked">
+            <div class="hero-slide"
+                 data-title="Pure Gold Chains &amp; Necklaces"
+                 data-price="100% BIS Hallmarked"
+                 data-tagline="Pure &amp; Certified"
+                 data-heading="Timeless Chains,<br>Crafted in <em>Purity</em>"
+                 data-desc="From delicate everyday chains to statement necklaces, every piece is 100% BIS Hallmarked — a promise of purity you can wear with pride.">
                 <img src="images/p2.jpeg" 
                      alt="Pure gold chain and necklace collection">
             </div>
-            <div class="hero-slide" data-title="Gold Bangles &amp; Bracelets" data-price="22K Hallmarked Purity">
+            <div class="hero-slide"
+                 data-title="Gold Bangles &amp; Bracelets"
+                 data-price="22K Hallmarked Purity"
+                 data-tagline="Handcrafted Elegance"
+                 data-heading="Bangles &amp; Bracelets,<br>Made for <em>Every Occasion</em>"
+                 data-desc="Discover intricately handcrafted 22K gold bangles and bracelets, blending traditional artistry with designs made for the modern woman.">
                 <img src="images/p3.jpeg" 
                      alt="Pure gold bangles and bracelets collection">
             </div>
             <div class="hero-image-overlay">
                 <p class="overlay-title" id="heroTitle">Bridal Collection</p>
                 <p class="overlay-price" id="heroPrice">Only 4.99% Making Charges</p>
+                <p class="overlay-date">Starting 15th September</p>
             </div>
         </div>
     </section>
@@ -127,7 +144,7 @@
                         </div>
                         <div class="detail-row">
                             <span class="detail-label">Making Charges</span>
-                            <span class="detail-value">Only 4.99% (Festive Offer)</span>
+                            <span class="detail-value">Only 4.99% (Festive Offer, Starts 15th Sept)</span>
                         </div>
                         <a href="https://wa.me/919675121215?text=Hello%20Swarnganga%20Jewellers%2C%20I%20would%20like%20to%20enquire%20about%20your%20jewellery%20collections%20and%20festive%20offer." target="_blank" rel="noopener" class="btn-primary">Enquire About This Piece</a>
                     </div>
@@ -213,11 +230,19 @@
         <div class="container offer-container">
             <div class="offer-visual">
                 <img src="images/offer-poster.jpeg" alt="Swarnganga Jewellers festive offer - 4.99% making charges on 22K gold jewellery">
+                <span class="offer-visual-date">Starts 15th Sept</span>
             </div>
             <div class="offer-content">
                 <p class="text-label offer-label">First Time In Meerut</p>
+                <div class="offer-badge">
+                    <span class="offer-badge-percent">4.99%</span>
+                    <span class="offer-badge-text">Making<br>Charges</span>
+                </div>
+                <p class="offer-date-line">
+                    <i class="fa-solid fa-calendar-days"></i> Offer Starts <strong>15th September</strong>
+                </p>
                 <h2 class="heading-display offer-heading">
-                    Now Get <span class="offer-percent">4.99%</span><br>
+                    Now Get <span class="offer-percent">Only 4.99%</span><br>
                     Making Charges
                 </h2>
                 <p class="offer-sub">on 22K Pure Gold Jewellery</p>
@@ -228,7 +253,8 @@
                 </p>
                 <ul class="offer-points">
                     <li><i class="fa-solid fa-check"></i> 100% Pure, 22K BIS Hallmarked Gold</li>
-                    <li><i class="fa-solid fa-check"></i> Only 4.99% Making Charges — Limited Period</li>
+                    <li class="offer-point-highlight"><i class="fa-solid fa-check"></i> Only <strong>4.99% Making Charges</strong> — Limited Period</li>
+                    <li class="offer-point-highlight"><i class="fa-solid fa-calendar-days"></i> Offer Valid From <strong>15th September</strong></li>
                     <li><i class="fa-solid fa-check"></i> Complete Price Transparency, No Hidden Costs</li>
                     <li><i class="fa-solid fa-check"></i> Best Value On Old Gold Exchange</li>
                 </ul>
@@ -928,7 +954,7 @@
                         <li><a href="#story">Our Story</a></li>
                         <li><a href="#craftsmanship">Why Swarnganga</a></li>
                         <li><a href="#contact">Visit Us</a></li>
-                        <li><a href="#contact">Festive Offer</a></li>
+                        <li><a href="#contact">Festive Offer (Starts 15th Sept)</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -1071,14 +1097,24 @@
 
     <!-- Festive Offer Popup -->
     <div class="sg-popup-overlay" id="sgPopupOverlay">
-        <div class="sg-popup-box">
+        <div class="sg-popup-box sg-popup-box--split">
             <button class="sg-popup-close" id="sgPopupClose" aria-label="Close popup">&times;</button>
-            <p class="text-label" style="color:var(--color-gold);">Festive Special</p>
-            <h3 class="heading-display" style="margin:0.5rem 0;">Only 4.99% Making Charges</h3>
-            <p class="text-body" style="margin-bottom:1.5rem;">On our exquisite range of Chains, Necklaces, Bangles &amp; More. Limited period offer — visit us or enquire today.</p>
-            <div style="display:flex;gap:12px;flex-wrap:wrap;">
-                <a href="https://wa.me/919675121215?text=Hello%20Swarnganga%20Jewellers%2C%20I%20would%20like%20to%20enquire%20about%20the%20festive%20offer." target="_blank" rel="noopener" class="btn-primary">Enquire on WhatsApp</a>
-                <a href="tel:+919675121215" class="btn-text">Call Now</a>
+            <div class="sg-popup-image">
+                <img src="images/offer-poster.jpeg" alt="Swarnganga Jewellers festive offer - 4.99% making charges on 22K gold jewellery">
+                <span class="sg-popup-image-badge">4.99%</span>
+                <span class="sg-popup-image-date">Starts 15th Sept</span>
+            </div>
+            <div class="sg-popup-content">
+                <p class="text-label" style="color:var(--color-gold);">Festive Special</p>
+                <h3 class="heading-display" style="margin:0.5rem 0;">Only 4.99% Making Charges</h3>
+                <p class="offer-date-line offer-date-line--popup">
+                    <i class="fa-solid fa-calendar-days"></i> Offer Starts <strong>15th September</strong>
+                </p>
+                <p class="text-body" style="margin-bottom:1.5rem;">On our exquisite range of Chains, Necklaces, Bangles &amp; More. Limited period offer — visit us or enquire today.</p>
+                <div style="display:flex;gap:12px;flex-wrap:wrap;">
+                    <a href="https://wa.me/919675121215?text=Hello%20Swarnganga%20Jewellers%2C%20I%20would%20like%20to%20enquire%20about%20the%20festive%20offer." target="_blank" rel="noopener" class="btn-primary">Enquire on WhatsApp</a>
+                    <a href="tel:+919675121215" class="btn-text">Call Now</a>
+                </div>
             </div>
         </div>
     </div>
